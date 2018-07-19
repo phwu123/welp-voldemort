@@ -1,14 +1,6 @@
-Sidebar Component for Welp (All Hail Lord Voldemort)
+#Sidebar Component for Welp (All Hail Lord Voldemort)- 
+Full stack app that displays restaurant information in the style of a Yelp restaurant page.
 
+One service of four.  Rest are at https://github.com/hrla22-welp
 
-
-bundle.js = https://s3-us-west-1.amazonaws.com/hr22welp-sidebar/bundle.js
-
-
-
-may need to:
-
-turn off db
-
-set db sync force: true
-uncomment commented out lines in addRestaurants() in ./client/components/Home.jsx
+Made with React, NodeJS, Express, PostgreSQL with Sequelize. Styled with CSS modules.
