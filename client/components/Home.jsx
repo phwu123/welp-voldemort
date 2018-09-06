@@ -17,7 +17,7 @@ export default class Home extends Component{
 
   componentDidMount() {
     //random search on refresh
-    this.addRestaurants();
+    //this.addRestaurants();
   }
 
   addRestaurants() {

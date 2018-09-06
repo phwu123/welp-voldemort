@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const parser = require('body-parser');
 const path = require('path');
-require('../db/config');
+//require('../db/config');
 const cors = require('cors');
 
 const { router } = require('./router');

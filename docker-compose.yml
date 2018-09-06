@@ -2,8 +2,6 @@ version: '2'
 services:
   db:
     image: postgres:9.6
-    networks:
-      [webnet]
     environment:
       POSTGRES_DB: postgres    
       POSTGRES_USER: postgres
@@ -11,7 +9,7 @@ services:
     volumes:
       - db-data:/var/lib/data
   proxy:
-    image: phwu123/prox
+    image: phwu123/welp-prox
     ports:
       - "3900:3900"
   web:
@@ -19,8 +17,6 @@ services:
       - db
     image: phwu123/side
     command: bash -c "sleep 5; npm start"
-    networks:
-      [webnet]
     ports:
       - "3002:3002"
     environment:
@@ -29,5 +25,3 @@ services:
       - db
 volumes: 
   db-data:
-networks:
-  webnet:
